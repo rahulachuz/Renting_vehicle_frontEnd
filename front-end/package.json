@@ -32,5 +32,8 @@
     "postcss": "^8.5.3",
     "postcss-loader": "^8.1.1",
     "vite": "^6.2.0"
+  },
+  "optionalDependencies": {
+    "@tailwindcss/oxide": "^4.1.3"
   }
 }
