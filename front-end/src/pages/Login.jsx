@@ -57,7 +57,7 @@ function Login() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your email"
               required
             />
@@ -70,7 +70,7 @@ function Login() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your password"
               required
             />
@@ -84,7 +84,10 @@ function Login() {
           <div className="text-gray-800 text-center">
             <p>
               Don't have an account?{" "}
-              <Link to="/register" className="hover:text-blue-600 hover:underline">
+              <Link
+                to="/register"
+                className="hover:text-blue-600 hover:underline"
+              >
                 Register
               </Link>
             </p>
