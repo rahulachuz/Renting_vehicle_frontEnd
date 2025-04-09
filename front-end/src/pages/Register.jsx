@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -82,9 +82,9 @@ function Register() {
           <div className="text-gray-800 text-center">
             <p>
               Already have an account?{" "}
-              <a className="hover:text-blue-500 hover:underline" href="/login">
+              <Link to="/login" className="hover:text-blue-500 hover:underline">
                 Login
-              </a>
+              </Link>
             </p>
           </div>
         </form>

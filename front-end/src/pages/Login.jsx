@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 
 function Login() {
@@ -14,10 +14,7 @@ function Login() {
     try {
       const res = await axios.post(
         "https://renting-vechiles-backend.onrender.com/api/auth/login",
-        {
-          email,
-          password,
-        }
+        { email, password }
       );
 
       const userData = res.data;
@@ -38,7 +35,7 @@ function Login() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100 ">
+    <div className="flex justify-center items-center h-screen bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md relative">
         {/* 🔐 Admin Login Redirect */}
         <div
@@ -60,7 +57,7 @@ function Login() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your email"
               required
             />
@@ -73,7 +70,7 @@ function Login() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your password"
               required
             />
@@ -84,15 +81,12 @@ function Login() {
           >
             Login
           </button>
-          <div className="text-gray-800 text-center ">
+          <div className="text-gray-800 text-center">
             <p>
               Don't have an account?{" "}
-              <a
-                className="hover:text-blue-600 hover:underline"
-                href="/register"
-              >
+              <Link to="/register" className="hover:text-blue-600 hover:underline">
                 Register
-              </a>
+              </Link>
             </p>
           </div>
         </form>
