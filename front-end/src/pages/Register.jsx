@@ -17,7 +17,7 @@ function Register() {
     e.preventDefault();
     try {
       await axios.post(
-        "https://renting-vehicles-backend.onrender.com/api/auth/register",
+        "https://renting-vechiles-backend.onrender.com/api/auth/register",
         formData
       );
       navigate("/login"); // ✅ Redirect on successful registration
