@@ -43,7 +43,7 @@ function Register() {
               name="name"
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 mt-2 border rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your name"
             />
           </div>
@@ -56,7 +56,7 @@ function Register() {
               name="email"
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 mt-2 border rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your email"
             />
           </div>
@@ -69,7 +69,7 @@ function Register() {
               name="password"
               onChange={handleChange}
               required
-              className="w-full px-4 py-2 mt-2 border rounded-md text-black focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 mt-2 border rounded-md text-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your password"
             />
           </div>
@@ -81,7 +81,10 @@ function Register() {
           </button>
           <div className="text-gray-800 text-center">
             <p>
-              Already have an account? <a href="/login">Login</a>
+              Already have an account?{" "}
+              <a className="hover:text-blue-500 hover:underline" href="/login">
+                Login
+              </a>
             </p>
           </div>
         </form>

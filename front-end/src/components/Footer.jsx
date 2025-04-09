@@ -16,7 +16,7 @@ function Footer() {
 
         {/* ✅ Services Section */}
         <div>
-          <h6 className="text-white text-xl font-bold mb-3">Services</h6>
+          <p className="text-white text-xl font-bold mb-3">Services</p>
           <a className="text-gray-400 block mb-2 hover:text-white transition">
             Car Rentals
           </a>
@@ -33,7 +33,7 @@ function Footer() {
 
         {/* ✅ Company Section */}
         <div>
-          <h6 className="text-white text-xl font-bold mb-3">Company</h6>
+          <h6 className="text-white text-xl font-bold mb-3 ">Company</h6>
           <a className="text-gray-400 block mb-2 hover:text-white transition">
             About Us
           </a>
@@ -105,7 +105,7 @@ function Footer() {
         </div>
 
         {/* ✅ Copyright Text */}
-        <div className="sm:text-right flex items-center justify-center bg-blue-200">
+        <div className="sm:text-right flex items-center justify-center">
           © {new Date().getFullYear()} Vehicle Rentals. All rights reserved.
         </div>
       </div>

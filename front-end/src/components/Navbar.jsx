@@ -83,7 +83,7 @@ function Navbar() {
             ) : (
               <>
                 <Link
-                  className="hover:border-gray-600 border border-transparent px-6 py-2 rounded-lg transition duration-300"
+                  className="hover:border-gray-600 border border-transparent px-6 py-2 rounded-lg transition duration-300 "
                   to="/login"
                 >
                   Login
@@ -106,10 +106,6 @@ function Navbar() {
             <Link to="/" onClick={() => setIsOpen(false)}>
               Home
             </Link>
-            <Link to="/list" onClick={() => setIsOpen(false)}>
-              Vehicle List
-            </Link>
-
             {!isAdmin && (
               <Link to="/history" onClick={() => setIsOpen(false)}>
                 Booking History
@@ -128,7 +124,7 @@ function Navbar() {
                   handleLogout();
                   setIsOpen(false);
                 }}
-                className="text-red-500"
+                className="text-red-500 "
               >
                 Logout
               </button>

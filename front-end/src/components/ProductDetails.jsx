@@ -20,7 +20,7 @@ const ProductDetails = () => {
     const fetchVehicle = async () => {
       try {
         const { data } = await axios.get(
-          `http://localhost:5000/api/vehicles/${id}`
+          `https://renting-vechiles-backend.onrender.com/api/vehicles/${id}`
         );
         setVehicle(data);
       } catch (error) {
@@ -61,7 +61,7 @@ const ProductDetails = () => {
       };
 
       const bookingRes = await axios.post(
-        "http://localhost:5000/api/bookings",
+        "https://renting-vechiles-backend.onrender.com/api/bookings",
         bookingData,
         {
           headers: {
@@ -75,7 +75,7 @@ const ProductDetails = () => {
 
       // 2️⃣ Create Stripe Checkout session
       const paymentRes = await axios.post(
-        "http://localhost:5000/api/payment/checkout",
+        "https://renting-vechiles-backend.onrender.com/api/payment/checkout",
         {
           vehicleId: booking.vehicle,
           amount: booking.totalPrice,

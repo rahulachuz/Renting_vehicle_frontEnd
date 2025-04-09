@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
-@import "tailwindcss";
-@plugin "daisyui";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Set default font */
 * {
-  font-family: Outfit;
+  font-family: "Outfit", sans-serif;
 }
 
+/* Custom class using Prata font */
 .prata-regular {
   font-family: "Prata", serif;
   font-weight: 400;
